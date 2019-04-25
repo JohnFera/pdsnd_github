@@ -1,5 +1,5 @@
 ## name: bikeshare.py
-## last modify 19/94/15
+## last modify 19/04/15
 
 ## necessary lubarys
 import time
