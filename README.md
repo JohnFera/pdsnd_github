@@ -1,14 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+Last Version 13. June 2018
 
 ### Project Title
-Replace the Project Title
+Udacity Programming for Data Scienarchive
+Python file name: bikeshare.py
 
 ### Description
-Describe what your project is about and what it does
+Analyzed of data with Python
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
@@ -25,7 +26,10 @@ This project make used of Python to explore data related to bike share systems f
 This project have used data provided by [Motivate](https://www.motivateco.com/), a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. You will compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
 ## How to run the script
-discription
+You need folow libary and PC whre run Pythom
+time
+pandas
+numpy
 
 ## Datasets
 You find the orignal data here:
@@ -35,16 +39,16 @@ chicago.csv new_york_city.csv washington.csv
 
 
 ### Memo to me
-- [ ] Write Readme.md
-- [ ] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull requestject of Udacity's Data Analyst Nanodegree 
-- [ ] Date created
+- [x] Write Readme.md
+- [x] Finish my changes
+- [x] Push my commits to GitHub
+- [x] Open a pull requestject of Udacity's Data Analyst Nanodegree 
+- [x] Date created
       Include the date you created this project and README file.
-- [ ] Project Title
-- [ ] Description
+- [x] Project Title
+- [x] Description
        Describe what your project is about and what it does
-- [ ] Files used Include the files used
-- [ ] Credits
+- [x] Files used Include the files used
+- [x] Credits
       It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
