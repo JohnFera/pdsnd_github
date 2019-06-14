@@ -158,10 +158,28 @@ def user_stats(df,city,month,day):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def   view_raw_data(df,city,month,day):
+    """
+    Input: df
+    Output: Displays the raw datapython  """
+    print('\nView Raw Data')
+
+    df = df.drop(['month', 'day_of_week'], axis = 1)
+    rowIndex = 0
+    seeData = input("\nWould you see the raw data of stats?\nPlease write [y] Yes [n] No: ").lower()
+    while True:
+        if seeData == 'n':
+            return
+        if seeData == 'y':
+            print(df[rowIndex: rowIndex + 5])
+            rowIndex = rowIndex + 5
+        seeData = input("\nWould you see next five more rows?\nPlease write [y] Yes [n] No: ").lower()
+
 def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
+
 
         time_stats(df,city,month,day)
         time.sleep(sleeptime)
@@ -175,8 +193,12 @@ def main():
             user_short (df,city,month,day)
         if city !='Washington':
             user_stats(df,city,month,day)
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':  break
+
+        view_raw_data(df,city,month,day)
+        print('-'*40)
+
+        restart = input('\nWould you like to restart?\nEnter [y] Yes [n] No: ')
+        if restart.lower() != 'y':  break
 
 if __name__ == "__main__":
 	main()
